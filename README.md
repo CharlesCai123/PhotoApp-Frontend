@@ -26,6 +26,9 @@ make build
 
 # Login 
 Use Web to open and run this project
+
+<img src="assets/marvel.svg"/>
+
 ![web_run](assets/web_run.png)
 
 Login Firebase with registered account: *Username* -> tester1@test.com, *Password* -> 123123,
