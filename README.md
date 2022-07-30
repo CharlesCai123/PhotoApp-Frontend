@@ -1,6 +1,6 @@
 # my_family_story
 
-My Family Story App
+My Family Story App (A raw framework for UI design of App)
 
 ## Getting Started
 
@@ -37,11 +37,11 @@ Use Android or Web to open and run this project
 
 Login Firebase with registered account: *Username* -> tester1@test.com, *Password* -> 123123,
 
-<p align="center"><img src="assets/login.png" width="720"/></p>
+<p align="center"><img src="assets/login.png" width="640"/></p>
 
 ## UI Widgets
 
 ---
 
-<p align="center"><img src="assets/GIFs/app.gif" width="720"/></p>
+<p align="center"><img src="assets/GIFs/app.gif" width="640"/></p>
 
