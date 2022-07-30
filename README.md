@@ -24,14 +24,24 @@ make clean_build
 make build
 ```
 
-# Login 
-Use Web to open and run this project
+# Runtime
 
-<img src="assets/marvel.svg"/>
+Use Android or Web to open and run this project
 
-![web_run](assets/web_run.png)
+<p align="center"><img src="assets/runtime.png" width="720"/></p>
+
+## Login
+
+---
+
 
 Login Firebase with registered account: *Username* -> tester1@test.com, *Password* -> 123123,
 
-![web_run](./assets/login.png)
+<p align="center"><img src="assets/login.png" width="720"/></p>
+
+## UI Widgets
+
+---
+
+<p align="center"><img src="assets/GIFs/app.gif" width="720"/></p>
 

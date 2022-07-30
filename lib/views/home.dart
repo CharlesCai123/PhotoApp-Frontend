@@ -7,7 +7,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:my_family_story/data/photo.dart';
 import 'package:my_family_story/data/photos_filter.dart';
 import 'package:my_family_story/models/providers/filter_providers.dart';
@@ -260,20 +259,6 @@ class MyHomePageState extends ConsumerState<MyHomePage>
                 ),
               ),
             );
-            /*floatingActionButton: FloatingActionButton(
-          onPressed: () => setState(() {
-            _count++;
-          }),
-          tooltip: 'Increment Counter',
-          child: const Icon(Icons.add),
-        ),
-          floatingActionButton: FloatingActionButton.extended(
-            onPressed: () =>
-                Navigator.pushNamed(context, '/characters/1009368'),
-            label: const Text('Deep link to Iron-man'),
-            icon: const Icon(Icons.link),
-          ),
-        );*/
           },
         );
   }
@@ -281,7 +266,8 @@ class MyHomePageState extends ConsumerState<MyHomePage>
   /// sign out
   Future<void> _signOut() async {
     await FirebaseAuth.instance.signOut();
-    await GoogleSignIn().signOut();
+    print("sign out!");
+    Navigator.popUntil(context, ModalRoute.withName('/'));
   }
 }
 

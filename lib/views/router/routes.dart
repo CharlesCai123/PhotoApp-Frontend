@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_family_story/views//settings/settings_menu/compute_unit_config_page.dart';
 import 'package:my_family_story/views//settings/settings_menu/encryption_settings_page.dart';
 import 'package:my_family_story/views//settings/settings_menu/general_settings_page.dart';
+import 'package:my_family_story/views/login/auth.dart';
 import 'package:my_family_story/views/settings/settings_menu/backup_settings_page.dart';
 import 'package:my_family_story/views/settings/settings_menu/notification_settings_page.dart';
 import 'package:my_family_story/views/settings/settings_menu/privacy_settings_page.dart';
@@ -12,14 +13,17 @@ import '../home.dart';
 
 /// Configure Router
 final routes = {
+  /// SignIn Page
+  '/signIn': (context) => const AuthGate(),
+
   /// Home Page
-  '/home': (context) => MyHomePage(),
+  '/home': (context) => const MyHomePage(),
 
   /// Home Button Menu
-  '/home/photo': (context) => MyHomePage(0),
-  '/home/album': (context) => MyHomePage(1),
-  '/home/filter': (context) => MyHomePage(2),
-  '/home/settings': (context) => MyHomePage(3),
+  '/home/photo': (context) => const MyHomePage(0),
+  '/home/album': (context) => const MyHomePage(1),
+  '/home/filter': (context) => const MyHomePage(2),
+  '/home/settings': (context) => const MyHomePage(3),
 
   /// Filter Settings
   '/filter/filter_settings': (context, {arguments}) =>
